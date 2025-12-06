@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 body{
+    background-image: url(24382455_v647-nap-41-backtoschool.jpg);
+    background-size: contain;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;

@@ -33,6 +33,7 @@ const btn = document.querySelector('button')
 const selecao = document.querySelector('#selecao')
 
 btn.addEventListener('click',()=>{
+  
 let valor1 = Number(entradaUn.value)
 let valor2 = Number(entrada2.value)
 let operacao = new OperationMat(valor1,valor2)
@@ -52,8 +53,11 @@ else if (selecao.value === 'multiply' && !isNaN(valor1) && !isNaN(valor2)) {
 
 else if (selecao.value === 'divided' && !isNaN(valor1) && !isNaN(valor2)) {
    return msg.innerHTML = `${operacao.divide()}`
-}else {
+}
+
+else {
   alert('Você não digitou um numero valido:(')
 }
+
 })
 
