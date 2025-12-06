@@ -23,6 +23,7 @@ h1 {
 }
 
 input{
+    text-align: center;
     width: 100%;
     outline: none;
     padding: 7px;
