@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div{
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input{
+    width: 100%;
+    outline: none;
+    padding: 7px;
+    margin-top: 10px;
+}
+
+select{
+    padding: 5px;
+    margin: 5px 0 ;
+    text-align: center;
+    width: 100%;
+}
+
+button{
+    padding: 5px 10px;
+    width: 100%;
+}
+
+p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 16px;
+    font-size: 20px;
+    height: 0;
+}
+
