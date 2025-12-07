@@ -56,7 +56,7 @@ else if (selecao.value === 'divided' && !isNaN(valor1) && !isNaN(valor2)) {
 }
 
 else {
-  alert('Você não digitou um numero valido :(')
+  alert('Você não digitou um numero...\nPor favor digite 2 numeros valido.')
 }
 
 })
