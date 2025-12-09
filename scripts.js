@@ -33,10 +33,10 @@ const btn = document.querySelector('button')
 const selecao = document.querySelector('#selecao')
 
 btn.addEventListener('click',()=>{
-
-let valor1 = Number(entradaUn.value)
-let valor2 = Number(entrada2.value)
-let operacao = new OperationMat(valor1,valor2)
+  
+const valor1 = Number(entradaUn.value)
+const valor2 = Number(entrada2.value)
+const operacao = new OperationMat(valor1,valor2)
 
 if(selecao.value === 'sum' && !isNaN(valor1) && !isNaN(valor2)){
   return msg.innerHTML = `${operacao.sum()}`
