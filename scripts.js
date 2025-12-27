@@ -19,7 +19,7 @@ class OperationMat {
     return `Multiplicação: ${this.number1 * this.number2} &#128515`
   }
 
-  divide(){
+  divided(){
   
     return `Divisão: ${this.number1 / this.number2} &#128521`
   }
@@ -47,7 +47,7 @@ const operationMath = {
   sum: () => operacao.sum(),
   subtract: () => operacao.subtract(),
   multiply:() => operacao.multiply(),
-  divide:() => operacao.divide()
+  divided:() => operacao.divided(),
 
 }
 
