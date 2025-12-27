@@ -36,28 +36,23 @@ btn.addEventListener('click',()=>{
   
 const valor1 = Number(entradaUn.value)
 const valor2 = Number(entrada2.value)
-const operacao = new OperationMat(valor1,valor2)
 
-if(selecao.value === 'sum' && !isNaN(valor1) && !isNaN(valor2)){
-  return msg.innerHTML = `${operacao.sum()}`
-
+if(isNaN(valor1) || isNaN(valor2)){
+  return msg.textContent = 'Por favor digite um numero...'
 } 
 
-else if(selecao.value === 'subtract' && !isNaN(valor1) && !isNaN(valor2)){
-   return msg.innerHTML = `${operacao.subtract()}`
+const operacao = new OperationMat(valor1,valor2)
+
+const operationMath = {
+  sum: () => operacao.sum(),
+  subtract: () => operacao.subtract(),
+  multiply:() => operacao.multiply(),
+  divide:() => operacao.divide()
+
 }
 
-else if (selecao.value === 'multiply' && !isNaN(valor1) && !isNaN(valor2)) {
-   return msg.innerHTML = `${operacao.multiply()}`
-}
+msg.innerHTML = operationMath[selecao.value]?.() ?? 'Operação inválida, selecione uma opção correta.'
 
-else if (selecao.value === 'divided' && !isNaN(valor1) && !isNaN(valor2)) {
-   return msg.innerHTML = `${operacao.divide()}`
-}
-
-else {
-  alert('Você não digitou um numero...\nPor favor digite 2 numeros valido.')
-}
 
 })
 
